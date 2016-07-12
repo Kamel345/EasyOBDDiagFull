@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vehicle_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/speed" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@string/orient" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.24"
+            android:text="@string/zero"
+            android:textSize="56sp"
+            android:id="@+id/tvSpeed" />
+
+        <TextView
+            android:id="@+id/tvCompass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.90"
+            android:gravity="end"
+            android:text="@string/position"
+            android:textSize="56sp" />
+    </TableRow>
+
+    <ScrollView
+        android:id="@+id/data_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="top"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:elevation="2dp"
+        android:outlineProvider="bounds">
+
+        <TableLayout
+            android:id="@+id/data_table"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:id="@+id/tableRowConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:gravity="center">
+
+                <TextView
+                    android:text="@string/conn_header"
+                    android:textSize="@dimen/header"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/status_bt"
+                    android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvStatBt"
+                    android:text="@string/no_connect"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowEngine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:gravity="center">
+
+                <TextView
+                    android:text="@string/engine"
+                    android:textSize="@dimen/header"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tvNameRPM"
+                android:text="@string/rpm"
+                android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvRPM"
+                    android:text="@string/zero_RPM"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip">
+
+                <TextView
+                    android:text="@string/temperature"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/tvNameCoolTemp"
+                    android:text="@string/temp_collant"
+                    android:width="2dp"
+                    android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvCoolTemp"
+                    android:text="@string/zero_c"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/inta_temp"
+                    android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvIntaTemp"
+                    android:text="@string/zero_c"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:gravity="center">
+
+                <TextView
+                    android:text="@string/pressures"
+                    android:textSize="@dimen/header"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/pressure"
+                    android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvPressure"
+                    android:text="@string/kPa"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/intanke_pressure"
+                    android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvIntankePressure"
+                    android:text="@string/kPa"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:gravity="center">
+
+                <TextView
+                    android:text="@string/others"
+                    android:textSize="@dimen/header"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/fuel_level"
+                    android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvFuelLevel"
+                    android:text="@string/zero_l"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bluetooth"
+            android:id="@+id/swBluetooth"
+            android:checked="false"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/get_GPS"
+            android:onClick="showGPS" />
+    </TableRow>
+
+</LinearLayout>
