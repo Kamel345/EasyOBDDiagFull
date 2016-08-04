@@ -9,5 +9,4 @@
             android:title="@string/pref_bluetooth_list_devices_title" />
     </PreferenceCategory>
 
-
 </PreferenceScreen>

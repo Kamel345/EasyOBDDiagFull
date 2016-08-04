@@ -137,6 +137,57 @@
             </TableRow>
 
             <TableRow
+                android:id="@+id/tableRowLoadEngine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/engine_load"
+                    android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvLoadEngine"
+                    android:text="@string/zero_percent"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowMassFlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/mass_flow"
+                    android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvMassFlow"
+                    android:text="@string/zero_gs"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableThrottle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/throttle_posiotion"
+                    android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvThrottlePosiotion"
+                    android:text="@string/zero_percent"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
+
+            <TableRow
                 android:id="@+id/tableRowTemp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -152,6 +203,23 @@
 
             </TableRow>
 
+            <TableRow
+                android:id="@+id/tableRowAirTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/temp_air"
+                    android:width="2dp"
+                    android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvAirTemp"
+                    android:text="@string/zero_c"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
 
             <TableRow
                 android:id="@+id/tableRow3"
@@ -188,6 +256,25 @@
                     android:textSize="@dimen/standard" />
 
             </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowOilTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/oil_temp"
+                    android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvOilTemp"
+                    android:text="@string/zero_c"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
+
+
 
             <TableRow
                 android:id="@+id/tableRowPressure"
@@ -241,6 +328,40 @@
             </TableRow>
 
             <TableRow
+                android:id="@+id/tableRowFuelPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/fuel_pressure"
+                    android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvFuelPressure"
+                    android:text="@string/kPa"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowFuelRailPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/fuel_rail_pressure"
+                    android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvFuelRailPressure"
+                    android:text="@string/kPa"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
+
+            <TableRow
                 android:id="@+id/tableRowOther"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -274,27 +395,62 @@
 
             </TableRow>
 
+            <TableRow
+                android:id="@+id/tableRowAirFuel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/air_fuel"
+                    android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvAirFuel"
+                    android:text="@string/zero"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowVIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:text="@string/vin"
+                    android:textSize="@dimen/standard" />
+
+                <TextView
+                    android:id="@+id/tvVIN"
+                    android:text="@string/zero"
+                    android:textSize="@dimen/standard" />
+
+            </TableRow>
+
         </TableLayout>
     </ScrollView>
 
     <TableRow
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1">
+        >
 
 
         <Switch
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="0.75"
             android:text="@string/bluetooth"
             android:id="@+id/swBluetooth"
             android:checked="false"
             android:layout_marginTop="5dp" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+            android:layout_weight="1.35"
             android:text="@string/get_GPS"
             android:onClick="showGPS" />
     </TableRow>

@@ -20,7 +20,11 @@
     <string name="pref_bluetooth_list_devices_title">Urządzenia Bluetooth</string>
     <string name="text_bluetooth_nodevice">Nie wybrano urządzenia Bluetoth</string>
     <string name="temp_collant">Temperatura cieczy:</string>
+    <string name="temp_air">Temperatura powietrza:</string>
     <string name="rpm">Obroty silnika:</string>
+    <string name="engine_load">Obciążenie silnika:</string>
+    <string name="throttle_posiotion">Otwarcie przepustnicy:</string>
+    <string name="mass_flow">Przepływ powietrza:</string>
     <string name="status_bt">Status połączenia:</string>
     <string name="connection">Łączenie...</string>
     <string name="get_GPS">Pokaż współrzędne GPS</string>
@@ -29,8 +33,13 @@
     <string name="inta_temp">Temperatura w dolocie:</string>
     <string name="zero_c">0 C</string>
     <string name="zero_RPM">0 RPM</string>
+    <string name="zero_percent">0 %</string>
+    <string name="zero_gs">0 g/s</string>
     <string name="pressure">Ciśnienie atmosferyczne: </string>
     <string name="intanke_pressure">Ciśnienie w dolocie: </string>
+    <string name="fuel_pressure">Ciśnienie paliwa: </string>
+    <string name="fuel_rail_pressure">Ciśnienie na wtryskach: </string>
+    <string name="air_fuel">Stosunek powietrze/paliwo:</string>
     <string name="kPa">0 kPa</string>
     <string name="temperature">Temperatury</string>
     <string name="no_set_bluetooth">Nie wybrano/odnaleziono urządzenia Bluetooth</string>
@@ -41,4 +50,12 @@
     <string name="engine">Silnik</string>
     <string name="pressures">Ciśnienia</string>
     <string name="others">Inne</string>
+    <string name="vin">Numer VIN:</string>
+    <string name="fault_codes">Sprawdź kody błędów w sterowniku</string>
+    <string name="fault_code">Kody Błędów</string>
+    <string name="display_options">Opcje Wyświetlania</string>
+    <string name="title_pref_commands_title">Wyświetlane informacje na ekranie</string>
+    <string name="title_pref_commands_summary">Wybierz opcje które mają być widoczne na ekranie</string>
+    <string name="oil_temp">Temperatura oleju:</string>
+    <string name="function_enabled">Funkcja niedostępna</string>
 </resources>
